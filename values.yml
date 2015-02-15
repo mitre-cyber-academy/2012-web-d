@@ -1,0 +1,4 @@
+name: "Is anyone out there?"
+description: |
+  MySpace is feeling a bit left out after everyone moved their social circles to Facebook (see what I did there?). After a series of privacy problems at Facebook, MySpace has seen an opportunity to win their users back with some great new features. We caught them testing a new [chat service](http://$nodejs:3000) but it doesn't seem to be much better than any of their other web properties. At least you can't change the background...oh the humanity.
+flag: "MCA-A9C758E9"

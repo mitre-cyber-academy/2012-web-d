@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  #wrapper(style='width: 800px; height: 400px;')
+    #contacts(style='width: 200px; height:400px; position: fixed; left: 0px; background-color:Black')
+      #roster-wrapper(style='color: White')
+        p(style='text-align: center') Chat Roster
+        #roster(style='border: 1px solid White; width: 160px; height: 320px; position: absolute; left: 10px; padding: 5px')
+          span#user1 AdminGuy
+          div 
+            span#user-nick.clickable Guest1
+            span#nick-span.hideonload 
+              form#nick-form
+                input#nick-input(type='text', value='Guest1') 
+    #content(style='width: 600px; height:400px; position: fixed; left: 200px; background-color:Black')
+      #chat-window(style='width: 560px; height: 320px; position: absolute; top: 20px; left: 20px; background-color: Black; border: 1px solid White')
+        #subject-line(style='width:558px; height: 18px; position: absolute; top: 0px; background-color: Green; color: Black; padding: 1px; text-align: center') 
+          span#room-subj.clickable Room Subject
+          span#subj-span.hideonload
+            form#subj-form
+              input#subj-input(type='text', value='Room Subject')
+        #chat-log(style='width:550px; height: 290px; color: Green; position: absolute; top: 20px; padding: 5px; overflow-x: hidden; overflow-y: scroll')
+      #chat-input(style='width: 600px; position: absolute; bottom: 10px; text-align: center')
+        form#chat-form
+          input#chat-input-text(type='text', size=80)
+          button#chat-send Send
+  script(src='/javascripts/app-client.js')
